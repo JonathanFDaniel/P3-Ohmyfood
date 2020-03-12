@@ -10,7 +10,7 @@ body
     margin: 0;
     padding: 0;
 }
-.header, .footer, .aside
+.header, .footer
 {
     font-family: 'Montserrat', sans-serif;
     color: var(--textcolor);
@@ -23,8 +23,72 @@ body
 }
 .header .header-title
 {
-    border: 1px solid black;
     font-size: 2.4em;
     font-weight: bolder;
     text-align: center;
+    padding-top: 26px;
+    margin: 0;
+}
+/*section*/
+.section
+{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 20px 50px 20px;
+}
+.menu
+{
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.menu-note
+{
+    background-color: #fcdfdb;
+}
+.menu-chic
+{
+    background-color: #fff5fe;
+}
+.menu-delice
+{
+    background-color: #f9f9f9;
+}
+.menu-palette
+{
+    background-color: #fdfffd;
+}
+/*aside*/
+.aside
+{
+    margin: 20px auto;
+}
+.button
+{
+    display: block;
+    margin: auto;
+    width: 280px;
+    height: 50px;
+    border: none;
+    font-size: 1.8em;
+    color: var(--textcolor);
+    background-color: var(--primary);
+    border-radius: 10px;
+    cursor: pointer;
+}
+/*footer*/
+footer
+{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-link
+{
+    padding: 10px 20px;
+    font-size: 1.4em;
+    cursor: pointer;
 }
