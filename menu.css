@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kalam|Kaushan+Script|Lora|Ma+Shan+Zheng|Montserrat|Nanum+Pen+Script&display=swap');
 html
 {
     --primary: #579c87;
@@ -29,7 +28,7 @@ body
     padding-top: 26px;
     margin: 0;
 }
-/*section*/
+/*menu*/
 .section
 {
     display: flex;
@@ -38,28 +37,70 @@ body
     justify-content: space-around;
     margin: 50px 20px 50px 20px;
 }
-.menu
+.page
 {
     width: 300px;
     height: 500px;
-    border: 1px solid black;
+    box-shadow: 0px 0px 10px lightgray;
     cursor: pointer;
+    text-align: center;
 }
-.menu-note
+.menu
+{
+    margin-top: 190px;
+}
+
+/*la note enchantée*/
+.page-note
 {
     background-color: #fcdfdb;
 }
-.menu-chic
+.note-title
+{
+    font-family: 'Ma Shan Zheng', cursive, sans-serif;
+}
+.note-menu
+{
+    font-family: 'Nanum Pen Script', cursive, sans-serif;
+}
+/*le chic à la français*/
+.page-chic
 {
     background-color: #fff5fe;
 }
-.menu-delice
+.chic-title
+{
+    font-family: 'Croissant One', cursive, sans-serif;
+}
+.chic-menu
+{
+    font-family: 'Croissant One', cursive, sans-serif;
+}
+/*le délice des papilles*/
+.page-delice
 {
     background-color: #f9f9f9;
 }
-.menu-palette
+.delice-title
+{
+    font-family: 'Dancing Script', cursive, sans-serif;
+}
+.delice-menu
+{
+    font-family: 'Nanum Pen Script', cursive, sans-serif;
+}
+/*le palette du goût*/
+.page-palette
 {
     background-color: #fdfffd;
+}
+.palette-title
+{
+    font-family: 'Kaushan Script', cursive, sans-serif;
+}
+.palette-menu
+{
+        font-family: 'Nanum Pen Script', cursive, sans-serif;
 }
 /*aside*/
 .aside
