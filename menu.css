@@ -33,7 +33,6 @@ body
 {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
     justify-content: space-around;
     margin: 50px 20px 50px 20px;
 }
@@ -44,6 +43,7 @@ body
     box-shadow: 0px 0px 10px lightgray;
     cursor: pointer;
     text-align: center;
+    margin: 20px 20px;
 }
 .menu
 {
@@ -110,7 +110,7 @@ body
 .button
 {
     display: block;
-    margin: auto;
+    margin: 100px  auto;
     width: 280px;
     height: 50px;
     border: none;
@@ -121,8 +121,12 @@ body
     cursor: pointer;
 }
 /*footer*/
-footer
+.footer
 {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -133,3 +137,55 @@ footer
     font-size: 1.4em;
     cursor: pointer;
 }
+/*menu 1 la note enchantée*/
+.menu-1
+{
+    font-size: 0.8em;
+    box-shadow: 0px 0px 10px lightgray;
+    width: 460px;
+    height: 600px;
+    margin: 20px auto 70px;
+}
+.title-menu
+{
+    width: auto;
+    height: 140px;
+    font-size: 2.2em;
+    text-align: center;
+}
+.section-menu
+{
+    display: flex;
+    font-family: 'Nanum Pen Script', cursive, sans-serif;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+p
+{
+    margin: 0;
+}
+.meal-part
+{
+    margin-top: 30px;
+    width: 370px;
+    height: auto;
+    text-align: center;
+}
+.food
+{
+    width: 340px;
+    height: auto;
+}
+.price
+{
+    width: 30px;
+    height: auto;
+    text-align: end;
+}
+.not-price
+{
+    width: 370px;
+}
+/*menu 2 le chic à la française*/
+/*menu 3 le délice des papilles*/
+/*menu 4 la palette du goût*/
