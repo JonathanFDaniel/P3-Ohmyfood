@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kalam|Kaushan+Script|Lora|Ma+Shan+Zheng|Montserrat|Montserrat:800|Nanum+Pen+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kalam|Averia+Libre|Kaushan+Script|Lora|Ma+Shan+Zheng|Montserrat|Montserrat:800|Nanum+Pen+Script&display=swap');
 html
 {
     --primary: #579c87;
@@ -38,30 +38,30 @@ body
 }
 .page
 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
     width: 300px;
     height: 500px;
     box-shadow: 0px 0px 10px lightgray;
     cursor: pointer;
-    text-align: center;
     margin: 20px 20px;
 }
-.menu
-{
-    margin-top: 190px;
-}
-
 /*la note enchantée*/
 .page-note
 {
     background-color: #fcdfdb;
+    color: #3d1319;
 }
 .note-title
 {
     font-family: 'Ma Shan Zheng', cursive, sans-serif;
 }
-.note-menu
+.note-menu, .delice-menu, .palette-menu
 {
     font-family: 'Nanum Pen Script', cursive, sans-serif;
+    font-size: 2.5em;
 }
 /*le chic à la français*/
 .page-chic
@@ -71,10 +71,12 @@ body
 .chic-title
 {
     font-family: 'Croissant One', cursive, sans-serif;
+    font-size: 1.2em;
 }
 .chic-menu
 {
     font-family: 'Croissant One', cursive, sans-serif;
+    font-size: 1.5em;
 }
 /*le délice des papilles*/
 .page-delice
@@ -85,10 +87,6 @@ body
 {
     font-family: 'Dancing Script', cursive, sans-serif;
 }
-.delice-menu
-{
-    font-family: 'Nanum Pen Script', cursive, sans-serif;
-}
 /*le palette du goût*/
 .page-palette
 {
@@ -97,10 +95,6 @@ body
 .palette-title
 {
     font-family: 'Kaushan Script', cursive, sans-serif;
-}
-.palette-menu
-{
-        font-family: 'Nanum Pen Script', cursive, sans-serif;
 }
 /*aside*/
 .aside
@@ -120,6 +114,10 @@ body
     border-radius: 10px;
     cursor: pointer;
 }
+.button:hover
+{
+    background-color: #235729;
+}
 /*footer*/
 .footer
 {
@@ -138,7 +136,7 @@ body
     font-size: 1.4em;
     cursor: pointer;
 }
-/*menu 1 la note enchantée*/
+/*règles communes toute page menu*/
 .title
 {
     margin-top: 40px;
@@ -147,24 +145,23 @@ body
     font-size: 1.5em;
     text-align: center;
 }
-/*menu 1 page*/
 .menu-1
 {
-    font-size: 0.9em;
+    font-size: 0.7em;
     box-shadow: 0px 0px 10px lightgray;
     width: 460px;
     height: 640px;
-    margin: 20px auto 70px;
-    color: #3d1319;
+    margin: 30px auto 70px;
 }
 .title-menu-1
 {
     width: auto;
     height: 100px;
-    font-size: 2.1em;
+    font-size: 2.3em;
     text-align: center;
     padding: 30px 0 0 0;
 }
+/*menu 1 la note enchantée*/
 .fa-music
 {
     margin: 0 5px 0 5px;
@@ -172,26 +169,34 @@ body
 .big-logo
 {
     font-size: 1.7em;
-    font-weight: lighter;
 }
 .section-menu
 {
     display: flex;
-    font-family: 'Nanum Pen Script', cursive, sans-serif;
+    font-family: 'Averia+Libre', cursive, sans-serif;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 20px 0 0px 0;
 }
 p
 {
-    margin: 0;
+    line-height: 1.5px;
 }
 .meal-part
 {
-    margin: 30px 0 10px 0;
-    width: 370px;
+    width: 140px;
     height: auto;
-    font-size: 1.4em;
+    font-size: 1.3em;
+    font-weight: bold;
     text-align: center;
+}
+.line
+{
+    margin-top: 13px;
+    width: 115px;
+    height: 3px;
+    background-color: black;
+    border: none;
 }
 .food
 {
@@ -203,7 +208,8 @@ p
     width: 30px;
     height: auto;
     text-align: end;
-    font-size: 1.3em;
+    font-size: 1.1em;
+    font-weight: bold;
 }
 .not-price
 {
@@ -213,12 +219,13 @@ p
 {
     text-align: center;
     font-weight: lighter;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .small-logo
 {
     font-size: 1.4em;
 }
+/*menu 1 la note enchantée*/
 /*menu 2 le chic à la française*/
 /*menu 3 le délice des papilles*/
 /*menu 4 la palette du goût*/
