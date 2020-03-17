@@ -51,6 +51,7 @@ body
 /*la note enchantée*/
 .page-note
 {
+    font-family: 'Averia+Libre', cursive, sans-serif;
     background-color: #fcdfdb;
     color: #3d1319;
 }
@@ -61,26 +62,46 @@ body
 .note-menu, .delice-menu, .palette-menu
 {
     font-family: 'Nanum Pen Script', cursive, sans-serif;
-    font-size: 2.5em;
+    font-size: 3em;
+}
+.note-meal-part
+{
+    width: 130px;
+}
+.note-line
+{
+    width: 120px;
 }
 /*le chic à la français*/
 .page-chic
 {
+    font-family: 'Croissant One', cursive, sans-serif; 
     background-color: #fff5fe;
 }
 .chic-title
 {
-    font-family: 'Croissant One', cursive, sans-serif;
     font-size: 1.2em;
 }
 .chic-menu
 {
-    font-family: 'Croissant One', cursive, sans-serif;
-    font-size: 1.5em;
+    font-size: 2em;
+}
+.chic-section
+{
+    font-size: 0.8em;
+}
+.chic-meal-part, .delice-meal-part, .palette-meal-part
+{
+    width: 180px;
+}
+.chic-line, .delice-line, .palette-line
+{
+    width: 110px; 
 }
 /*le délice des papilles*/
 .page-delice
 {
+    font-family: 'Averia+Libre', cursive, sans-serif;
     background-color: #f9f9f9;
 }
 .delice-title
@@ -90,6 +111,7 @@ body
 /*le palette du goût*/
 .page-palette
 {
+    font-family: 'Averia+Libre', cursive, sans-serif;
     background-color: #fdfffd;
 }
 .palette-title
@@ -173,7 +195,6 @@ body
 .section-menu
 {
     display: flex;
-    font-family: 'Averia+Libre', cursive, sans-serif;
     flex-wrap: wrap;
     justify-content: center;
     margin: 20px 0 0px 0;
@@ -184,7 +205,6 @@ p
 }
 .meal-part
 {
-    width: 140px;
     height: auto;
     font-size: 1.3em;
     font-weight: bold;
@@ -193,7 +213,6 @@ p
 .line
 {
     margin-top: 13px;
-    width: 115px;
     height: 3px;
     background-color: black;
     border: none;
