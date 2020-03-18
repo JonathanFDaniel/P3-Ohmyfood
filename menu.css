@@ -28,13 +28,14 @@ body
     padding-top: 25px;
     margin: 0;
 }
-/*menu*/
+/*page index*/
 .section
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     margin: 50px 20px 50px 20px;
+    font-size: 0.5em;
 }
 .page
 {
@@ -48,7 +49,7 @@ body
     cursor: pointer;
     margin: 20px 20px;
 }
-/*la note enchantée*/
+/*menu 1 la note enchantée*/
 .page-note
 {
     font-family: 'Averia+Libre', cursive, sans-serif;
@@ -58,6 +59,8 @@ body
 .note-title
 {
     font-family: 'Ma Shan Zheng', cursive, sans-serif;
+    flex-direction: column;
+    font-size: 3em;
 }
 .note-menu, .delice-menu, .palette-menu
 {
@@ -66,13 +69,38 @@ body
 }
 .note-meal-part
 {
+    font-weight: bold;
     width: 130px;
 }
 .note-line
 {
+    background-color: black;
     width: 120px;
 }
-/*le chic à la français*/
+.fa-music
+{
+    background-image: linear-gradient(to right, #ef495f,#f58668) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    margin: 0 5px 0 5px;
+}
+.small-title
+{
+    font-family: 'Ma Shan Zheng', cursive, sans-serif;
+    text-align: center;
+    font-weight: lighter;
+    margin-top: 30px;
+}
+.big-logo
+{
+    font-size: 1.7em;
+}
+.small-logo
+{
+    font-size: 1.4em;
+}
+/*menu 2 le chic à la français*/
 .page-chic
 {
     font-family: 'Croissant One', cursive, sans-serif; 
@@ -80,7 +108,11 @@ body
 }
 .chic-title
 {
-    font-size: 1.2em;
+    background-image: linear-gradient(to right, #c67412,#a56799,#6e4ccc) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 2.2em;
 }
 .chic-menu
 {
@@ -88,7 +120,31 @@ body
 }
 .chic-section
 {
-    font-size: 0.8em;
+    font-size: 0.95em;
+}
+.chic-section-1
+{
+    color: #c67412;
+}
+.chic-line-1
+{
+    background-color: #c67412;   
+}
+.chic-section-2
+{
+    color: #a56799; 
+}
+.chic-line-2
+{
+    background-color: #a56799;
+}
+.chic-section-3
+{
+    color: #6e4ccc; 
+}
+.chic-line-3
+{
+    background-color: #6e4ccc;
 }
 .chic-meal-part, .delice-meal-part, .palette-meal-part
 {
@@ -98,7 +154,7 @@ body
 {
     width: 110px; 
 }
-/*le délice des papilles*/
+/*menu 3 le délice des papilles*/
 .page-delice
 {
     font-family: 'Averia+Libre', cursive, sans-serif;
@@ -107,8 +163,25 @@ body
 .delice-title
 {
     font-family: 'Dancing Script', cursive, sans-serif;
+    background-image: linear-gradient(to right, #0228dd,#229df9) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 4em;
 }
-/*le palette du goût*/
+.delice-line-1
+{
+    background-color: #0228dd;
+}
+.delice-line-2
+{
+    background-color: #0670f3;
+}
+.delice-line-3
+{
+    background-color: #229df9;
+}
+/*menu 4 le palette du goût*/
 .page-palette
 {
     font-family: 'Averia+Libre', cursive, sans-serif;
@@ -117,6 +190,25 @@ body
 .palette-title
 {
     font-family: 'Kaushan Script', cursive, sans-serif;
+    background-image: linear-gradient(to right,#41963c,#b6f87a) ;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    font-size: 4em;
+}
+#palette-lines
+{
+    width: 120px;
+    margin-top: 12px;
+    height: 5px;
+}
+.palette-line
+{
+    background-image: linear-gradient(to right,#41963c,#b6f87a) ;
+}
+.palette-line-left
+{
+    background-image: linear-gradient(to left,#41963c,#b6f87a) ;
 }
 /*aside*/
 .aside
@@ -158,7 +250,7 @@ body
     font-size: 1.4em;
     cursor: pointer;
 }
-/*règles communes toute page menu*/
+/*règles communes pour toute les pages menu*/
 .title
 {
     margin-top: 40px;
@@ -169,35 +261,26 @@ body
 }
 .menu-1
 {
-    font-size: 0.7em;
+    font-size: 0.65em;
     box-shadow: 0px 0px 10px lightgray;
     width: 460px;
     height: 640px;
-    margin: 30px auto 70px;
+    margin: 30px auto 80px;
 }
 .title-menu-1
 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: auto;
-    height: 100px;
-    font-size: 2.3em;
-    text-align: center;
-    padding: 30px 0 0 0;
-}
-/*menu 1 la note enchantée*/
-.fa-music
-{
-    margin: 0 5px 0 5px;
-}
-.big-logo
-{
-    font-size: 1.7em;
+    height: 140px;
 }
 .section-menu
 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 20px 0 0px 0;
+    margin: 30px 0 0px 0;
 }
 p
 {
@@ -207,14 +290,12 @@ p
 {
     height: auto;
     font-size: 1.3em;
-    font-weight: bold;
     text-align: center;
 }
 .line
 {
     margin-top: 13px;
     height: 3px;
-    background-color: black;
     border: none;
 }
 .food
@@ -234,17 +315,3 @@ p
 {
     width: 370px;
 }
-.small-title
-{
-    text-align: center;
-    font-weight: lighter;
-    margin-top: 30px;
-}
-.small-logo
-{
-    font-size: 1.4em;
-}
-/*menu 1 la note enchantée*/
-/*menu 2 le chic à la française*/
-/*menu 3 le délice des papilles*/
-/*menu 4 la palette du goût*/
