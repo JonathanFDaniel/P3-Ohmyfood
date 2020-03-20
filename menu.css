@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kalam|Averia+Libre|Kaushan+Script|Lora|Ma+Shan+Zheng|Montserrat|Montserrat:800|Nanum+Pen+Script&display=swap');
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(2px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(4px, 0, 0);
+    }
+  }
 html
 {
     --primary: #579c87;
@@ -48,6 +65,39 @@ body
     box-shadow: 0px 0px 10px lightgray;
     cursor: pointer;
     margin: 20px 20px;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+.note-menu, .delice-menu, .palette-menu
+{
+    font-family: 'Nanum Pen Script', cursive, sans-serif;
+    font-size: 6em;
+}
+.chic-menu
+{
+    font-size: 4em;
+    color: #c67412;
+}
+.delice-menu
+{
+    color: #229df9;
+}
+.palette-menu
+{
+    color: #72bf56;
+}
+.item
+{
+    transform: scale(1);
+}
+.item:hover
+{
+   transform: scale(1.15); 
+   opacity: 0.6;
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
 }
 /*menu 1 la note enchantée*/
 .page-note
@@ -60,11 +110,6 @@ body
 {
     font-family: 'Ma Shan Zheng', cursive, sans-serif;
     flex-direction: column;
-    font-size: 3em;
-}
-.note-menu, .delice-menu, .palette-menu
-{
-    font-family: 'Nanum Pen Script', cursive, sans-serif;
     font-size: 3em;
 }
 .note-meal-part
@@ -110,13 +155,12 @@ body
 {
     background-image: linear-gradient(to right, #c67412,#a56799,#6e4ccc) ;
     -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -moz-background-clip: text;
+    -o-background-clip: text;
     background-clip: text;
     color: transparent;
     font-size: 2.2em;
-}
-.chic-menu
-{
-    font-size: 2em;
 }
 .chic-section
 {
@@ -250,7 +294,20 @@ body
     font-size: 1.4em;
     cursor: pointer;
 }
+.footer-link:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+} 
 /*règles communes pour toute les pages menu*/
+.pointer-menu
+{
+    position: fixed;
+    font-size: 2em;
+    color: var(--textcolor);
+    margin: 32px 0 0 30px;
+}
 .title
 {
     margin-top: 40px;
@@ -291,6 +348,26 @@ p
     height: auto;
     font-size: 1.3em;
     text-align: center;
+}
+.underline
+{
+    border-bottom: 1px solid black;
+}
+.meal-part:hover
+{
+    cursor: pointer;
+    animation: slidedown 10s;
+}
+@keyframes slidedown
+{
+    0%
+    {
+        transform: scaleX(0);
+    }
+    100%
+    {
+        transform: scaleX(1);
+    }
 }
 .line
 {
