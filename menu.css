@@ -308,6 +308,7 @@ a{
     color: var(--textcolor);
     margin: 32px 0 0 30px;
 }
+/*page*/
 .title
 {
     margin-top: 40px;
@@ -391,4 +392,45 @@ p
 .not-price
 {
     width: 370px;
+}
+@media screen and (max-width: 1450px)
+{
+    .section
+    {
+        max-width: 700px;
+        margin: auto;
+    }
+    .page
+    {
+        justify-content: space-around;
+        font-size: 0.8em;
+        width: 200px;
+        height: 300px;
+    }
+    .button
+    {
+        margin-top: 20px;
+        margin-bottom: 70px;
+    }
+}
+@media screen and (max-width: 500px)
+{
+    .menu-1
+    {
+        width: 350px;
+        height: 800px;
+        text-align: center;
+    }
+    .line
+    {
+        display: none;
+    }
+    .button
+    {
+        margin-top: 80px;
+    }
+    .footer
+    {
+        height: 80px;
+    }
 }
