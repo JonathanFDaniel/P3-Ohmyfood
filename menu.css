@@ -1,21 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Croissant+One|Dancing+Script|Kalam|Averia+Libre|Kaushan+Script|Lora|Ma+Shan+Zheng|Montserrat|Montserrat:800|Nanum+Pen+Script&display=swap');
-@keyframes shake {
-    10%, 90% {
-      transform: translate3d(-1px, 0, 0);
-    }
+@keyframes shake 
+{
+    10%, 90% {transform: translate3d(-1px, 0, 0);}
     
-    20%, 80% {
-      transform: translate3d(2px, 0, 0);
-    }
+    20%, 80% {transform: translate3d(2px, 0, 0);}
   
-    30%, 50%, 70% {
-      transform: translate3d(-4px, 0, 0);
-    }
+    30%, 50%, 70% {transform: translate3d(-4px, 0, 0);}
   
-    40%, 60% {
-      transform: translate3d(4px, 0, 0);
-    }
-  }
+    40%, 60% {transform: translate3d(4px, 0, 0);}
+}
+@keyframes dotty 
+{
+    0%   { content: ''; }
+    
+    25%  { content: '.'; }
+    
+    50%  { content: '..'; }
+    
+    75%  { content: '...'; }
+    
+    100% { content: ''; }
+}
 html
 {
     --primary: #579c87;
@@ -272,6 +277,12 @@ a{
     border-radius: 10px;
     cursor: pointer;
 }
+.loading:after
+{
+  display: inline-block;
+  animation: dotty 1s infinite;
+  content: '';
+}
 .button:hover
 {
     background-color: #235729;
@@ -346,29 +357,32 @@ p
 }
 .meal-part
 {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
     height: auto;
     font-size: 1.3em;
     text-align: center;
 }
-.underline
+.meal-part:before
 {
-    border-bottom: 1px solid black;
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scale(0);
+    height: 3px;
+    bottom: 0px;
+    left: 0;
+    background-color: lightgray;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease;
+    margin-bottom: -10px;
 }
-.meal-part:hover
+.meal-part:hover::before
 {
-    cursor: pointer;
-    animation: slidedown 10s;
-}
-@keyframes slidedown
-{
-    0%
-    {
-        transform: scaleX(0);
-    }
-    100%
-    {
-        transform: scaleX(1);
-    }
+    transform: scale(1);
+    transform-origin: bottom left;
+    margin-bottom: -10px;
 }
 .line
 {
