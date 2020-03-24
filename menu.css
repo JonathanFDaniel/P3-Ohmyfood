@@ -31,7 +31,7 @@ body
     margin: 0;
     padding: 0;
 }
-.header, .footer
+.header
 {
     color: var(--textcolor);
     background-color: var(--primary);
@@ -41,7 +41,7 @@ body
 {
     height: 100px;
 }
-.header .header-title
+.header .header-title 
 {
     font-family: 'Montserrat:800', sans-serif;   
     font-size: 2.5em;
@@ -72,7 +72,8 @@ body
     margin: 20px 20px;
     text-decoration: none;
 }
-a{
+a
+{
     text-decoration: none;
 }
 .note-menu, .delice-menu, .palette-menu
@@ -103,6 +104,14 @@ a{
    opacity: 0.6;
    -webkit-transition: .3s ease-in-out;
    transition: .3s ease-in-out;
+}
+/*page mentions légales*/
+.mentions
+{
+    font-family: 'Montserrat:800', sans-serif;   
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 300px;
 }
 /*menu 1 la note enchantée*/
 .page-note
@@ -260,17 +269,16 @@ a{
     background-image: linear-gradient(to left,#41963c,#b6f87a) ;
 }
 /*aside*/
-.aside
-{
-    margin: 20px auto;
-}
+
 .button
 {
-    display: block;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    padding: auto;
+    align-items: center;
     margin: 100px  auto;
     width: 280px;
     height: 50px;
-    border: none;
     font-size: 1.7em;
     color: var(--textcolor);
     background-color: var(--primary);
@@ -285,7 +293,7 @@ a{
 }
 .button:hover
 {
-    background-color: #235729;
+    font-size: 2em;
 }
 /*footer*/
 .footer
@@ -297,6 +305,7 @@ a{
     height: 50px;
     display: flex;
     justify-content: space-between;
+    background-color: var(--primary);
 }
 .footer-link
 {
@@ -304,6 +313,7 @@ a{
     font-family: 'Montserrat', sans-serif;
     font-size: 1.4em;
     cursor: pointer;
+    color: var(--textcolor);
 }
 .footer-link:hover {
     animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
@@ -438,13 +448,5 @@ p
     .line
     {
         display: none;
-    }
-    .button
-    {
-        margin-top: 80px;
-    }
-    .footer
-    {
-        height: 80px;
     }
 }
